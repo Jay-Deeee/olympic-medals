@@ -1,13 +1,14 @@
-This is a personal small project to kickstart my journey to learn Python and coding Machine Learning scripts. This specific project aims to predict how many olympic medals a country will win in a year based on past data. 
+## **Overview**
+This project is a small personal initiative to kickstart my journey in learning Python and machine learning. The goal is to predict the number of Olympic medals a country might win in a given year based on historical data.
 
-It will be trained using previous years' data of how many medals each country won and how many athletes they entered, then using that same template for testing where after predictions are made (using athletes entered and medals won in the previous year) will compare those predictions with the latest year where error is the absolute value of medals won - medals predicted.
+The model is trained on data from previous Olympic years, using the number of medals won and athletes entered by each country. It then generates predictions for a later year using the same input features. The model’s performance is evaluated by comparing its predictions to actual results, with error measured as the absolute difference between predicted and actual medal counts.
 
-Packages used:
-pandas
-numpy
-scikit-learn
-seaborn
-ipykernel
+#### **Packages used:**
+- pandas
+- numpy
+- scikit-learn
+- seaborn
+- ipykernel
 
-Conclusion:
-Using medals won in prev years and athletes entered for each country was only acceptably accurate for countries that entered a high number of athletes, for countries with low entrants, the results were far less accurate. For future use, maybe taking into account the individual athletes performance in pervious years (if any) would allow for more accurate predictions.
+### **Conclusion:**
+While using past medal counts and the number of athletes per country provided reasonably accurate predictions for nations with large delegations, the model performed poorly for countries with fewer participants. To improve future predictions, incorporating individual athlete performance data (if any) could offer a more granular and reliable basis for estimating medal outcomes.
